@@ -22,9 +22,14 @@ public class MainActivity extends AppCompatActivity {
         //Bind Widget
         bindWidget();
 
-
+        //Button Controller
+        buttonController();
 
     }   // นี่คือ เมธอดหลัก
+
+    private void buttonController() {
+
+    }   //buttonController
 
     private void bindWidget() {
 

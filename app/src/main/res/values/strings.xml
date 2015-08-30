@@ -5,6 +5,7 @@
     <string name="action_settings">Settings</string>
 
     <string name="head">จราจร</string>
+    <string name="title_activity_detail">DetailActivity</string>
 
 
 </resources>

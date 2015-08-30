@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -27,10 +28,25 @@ public class DetailActivity extends AppCompatActivity {
         //Show Image
         showImage();
 
+        //Show Detail
+        showDetail();
+
     }   // onCreate
+
+    public void clickBack(View view) {
+        finish();
+    }
+
+    private void showDetail() {
+
+        String[] strDetail = getResources().getStringArray(R.array.detail);
+        detailTextView.setText(strDetail[getIntent().getIntExtra("Index", 0)]);
+
+    }
 
     private void showImage() {
         int intImage = getIntent().getIntExtra("Image", R.drawable.traffic_01);
+        trafficImageView.setImageResource(intImage);
     }
 
     private void showTitle() {
